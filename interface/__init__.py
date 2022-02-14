@@ -82,8 +82,8 @@ payload = {
 
 # requests库为我们提供了更方便的方法，可以使用 Response对象的 json方法，
 response = requests.post("http://httpbin.org/post", data={1:1,2:2})
-obj = response.json()
-print(obj)
+# obj = response.json()
+print(response.status_code)
 
 
 
